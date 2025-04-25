@@ -1,0 +1,809 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+/* navbarsection  */
+.navhome {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.navBar {
+  width: 100%;
+  background-color: #fff;
+}
+.navMenu {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-size: small;
+  padding: 0px 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#nav li{
+   display: inline-block;
+   margin-right: 20px;
+   cursor: pointer;
+}
+.menuhover {
+  padding: 4px 4px 0px;
+}
+.menuhover:hover{
+  /* width: 100px; */
+  height: 25px;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.hoverEffect {
+  height: 25px;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.logoImg {
+  width: 100px;
+  height: 100px;
+}
+.upnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+  color: blueviolet;
+  transform: translateY(15px);
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+input {
+  height: 30px !important;
+  border-radius: 10px;
+}
+.mobileNav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.mobileleft {
+  padding-left: 10px;
+}
+.logomobile {
+  height: 60px;
+  width: 80px;
+}
+#menuicon {
+  width: 20px;
+  height: 20px;
+}
+#searchicon {
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+}
+.mobileright {
+  padding: 15px;
+  gap: 10px;
+}
+#ticketbtn {
+  width: 60px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: blue;
+}
+.cards{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    background-color: white;
+    padding: 0px;
+    min-width: 200px;
+    height: auto;
+    font-size: small;
+    z-index: 10; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cards.show {
+  display: block;
+}
+.menucards{
+  padding: 10px;
+}
+.menuUlList{
+  list-style: none;
+  padding: 0px;
+}
+.explore{
+  background-color: rgb(208, 230, 230);
+}
+.explorePara{
+  padding: 20px;
+}
+.castlelogo{
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+}
+.castlelogo img{
+  width: 50px;
+  height: 50px;
+}
+.castleFlex{
+  display: flex;
+  gap: 10px;
+  padding:10px 10px 0px 20px;
+}
+.shopImg{
+  width: 180px;
+  height: 180px;
+}
+.shopImg img{
+  width: 180px;
+  height: 180px;
+}
+.cartImg{
+  display: flex;
+  gap: 20px;
+}
+.cartImg1{
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.cartImg1 img{
+  width: 100px;
+  height: 100px;
+}
+.cartEnd{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+}
+.myDisney{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.myIcons{
+  width: 25px;
+  height: 25px;
+}
+.myIcons img{
+  width: 25px;
+  height: 25px;
+}
+/* #card2{
+  display: none;
+  display: flex
+} */
+
+/* hero section */
+
+.hero-Conrainer {
+  background-image: url(./assets/disney-world-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-15px);
+}
+
+.fieldContainer {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(-5%);
+}
+
+.fieldContainer p {
+  color: #003087;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dateSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-range input[type="date"] {
+  margin: 0 5px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#adultCount {
+  padding-top: 10px;
+}
+#childCount {
+  padding-top: 10px;
+}
+
+.btn1 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.find_hotel button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.heading {
+  text-align: center;
+  padding-top: 80px;
+  color: #fff;
+}
+.offerbtn {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: rgb(146, 96, 194);
+  color: #fff;
+  margin: 10px;
+}
+.headButton {
+  padding-top: 30px;
+}
+
+/* offerssection */
+.offersSection {
+  background-color: #fff;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 50px;
+  transform: translateY(-5%);
+}
+.offers {
+  width: 100%;
+  display: flex;
+  padding: 30px 20px;
+}
+.offerDes {
+  width: 80%;
+  padding: 50px;
+  text-align: start;
+}
+.offerDes p {
+  color: rgb(152, 125, 177);
+}
+.offerimage {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.offerimage img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.divider {
+  transform: translateY(-45%);
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  width: 50%;
+  padding: 0px 20px 20px;
+}
+.stars img {
+  width: 30px;
+  height: 30px;
+  color: rgb(147, 110, 182);
+}
+hr {
+  height: 10px;
+  color: black;
+}
+.imgAnimation {
+  transition: transform 1s ease-in-out;
+}
+.imgAnimation:hover {
+  transform: scale(1.03);
+}
+
+/* magicsection */
+.magic-section {
+  text-align: center;
+}
+
+.magic-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.magic-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.magic-card img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.magic-label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #c8102e;
+  color: white;
+  padding: 4px 8px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.magic-sub-label {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+#image4 {
+  height: 429px;
+}
+.magicdivider{
+  transform: translateY(25%);
+}
+
+/* disneystore section */
+.storeSection {
+  text-align: center;
+  transform: translateY(0);
+}
+
+.disneyStore {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 10px;
+  padding: 20px;
+}
+.storeCards {
+  width: 100%;
+  border-radius: 20px;
+}
+.storeImg {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* footer section */
+
+
+.planDisney{
+  width: 60%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: rgb(235, 241, 241);
+  padding: 10px 40px 10px 40px;
+  border-radius: 20px;
+}
+.planImgage{
+  width: 100px;
+  height: 100px;
+}
+.planImgage img{
+  width: 100px;
+  height: 100px;
+}
+#mobilelinks{
+  width: 80%;
+  height: 40px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 5px 20px 10px 20px;
+  display: none;
+}
+.footer{
+  width: 100%;
+  height: 100%;
+}
+.pageslinks{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 10px 30px;
+}
+.liststyles{
+  list-style: none;
+  padding: 0;
+  font-size: small;
+  color: rgb(46, 10, 80);
+}
+.lines{
+  width: 85%;
+  border: 0.2px solid black;
+  margin: auto;
+}
+.socialmedia{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px 10px 120px;
+  font-size: small;
+}
+.stayIn{
+  width: 200px;
+  margin-right: 200px;
+}
+.youtubeDiv{
+  display: flex;
+}
+.youtubeDiv p{
+  padding-top: 10px;
+}
+.relatedSites{
+  width: 82%;
+  background-color: rgb(235, 241, 241);
+  margin: auto;
+  padding: 20px 30px 20px 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: small;
+}
+.relSites{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Endfooter section */
+
+.footerEnd{
+  width: 70%;
+  margin: auto;
+  padding-top: 20px;
+  color: rgb(46, 10, 80);
+}
+.aditionalLinks{
+  display: flex;
+  font-size: small;
+  justify-content: space-between;
+}
+.aditionalLinks2{
+  display: flex;
+  font-size: small;
+  gap: 10px;
+  padding-left: 35%;
+}
+.copyRights{
+  padding-left: 38%;
+}
+@media (max-width: 820px) {
+  .navMenu {
+    display: none;
+  }
+  .upnav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+    display: flex;
+  }
+  .hero-Conrainer {
+    transform: translateY(0px);
+    height: 50vh;
+  }
+  .fieldContainer {
+    transform: translateY(200%);
+  }
+  .dateSelector {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .find_hotel {
+    align-self: stretch;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .find_hotel button {
+    width: 100%;
+  }
+  .heading {
+    transform: translateY(-80%);
+  }
+  .offersSection {
+    transform: translateY(20%);
+  }
+  .offersSection h2 {
+    padding: 0px;
+  }
+
+  .offers {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .offerimage img {
+    width: 100%;
+  }
+  .offerDes {
+    width: 100%;
+    text-align: center;
+  }
+  .magic-section {
+    transform: translateY(40%);
+  }
+  #image4 {
+    height: 220px;
+  }
+  .storeSection {
+    transform: translateY(5%);
+  }
+  .disneyStore {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .storeCards {
+    width: 100%;
+  }
+  .offerdivider {
+    transform: translateY(450%);
+  }
+  .getdivider {
+    transform: translateY(400%);
+  }
+  .magicdivider {
+    padding-top: 150px;
+    transform: translateY(50%);
+  }
+  .storedivider {
+    transform: translateY(180%);
+  }
+  .planDisney{
+    transform: translateY(65%);
+  }
+  .footer{
+    transform: translateY(10%);
+    height: 0%;
+  }
+  .pageslinks{
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 10px 10px 10px 10px;
+  }
+  .socialmedia{
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 10px 60px 10px 50px;
+  }
+  .relSites{
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 10px 40px 10px 40px;
+  }
+  .relatedSites{
+    width: 90%;
+  }
+  .footerEnd{
+    width: 95%;
+    transform: translateY(150%);
+  }
+  .aditionalLinks, .aditionalLinks2 {
+    font-size: 10px;
+  }
+  .aditionalLinks2{
+    padding-left: 35%;
+  }
+  .copyRights{
+    padding-left: 35%;
+  }
+  #mobilelinks{
+    display: block;
+    transform: translateY(300%);
+  }
+}
+
+@media (max-width: 477px) {
+  .navMenu {
+    display: none;
+  }
+  .upnav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+    display: flex;
+  }
+  .hero-Conrainer {
+    transform: translateY(0px);
+    height: 50vh;
+  }
+  .fieldContainer {
+    transform: translateY(110%);
+  }
+  .dateSelector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .find_hotel {
+    align-self: stretch;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .find_hotel button {
+    width: 100%;
+  }
+  .heading {
+    transform: translateY(-150%);
+  }
+  .offersSection {
+    transform: translateY(35%);
+  }
+
+  .offers {
+    flex-direction: column;
+  }
+  .offerimage img {
+    width: 100%;
+  }
+  .offerDes {
+    width: 100%;
+    text-align: center;
+  }
+
+  #image4 {
+    height: 320px;
+  }
+  .magic-section {
+    transform: translateY(35%);
+  }
+  .storeSection {
+    transform: translateY(20%);
+  }
+  .disneyStore {
+    width: 100%;
+    flex-direction: column;
+  }
+  .storeCards {
+    width: 100%;
+  }
+  .offerdivider {
+    transform: translateY(720%);
+  }
+  .getdivider {
+    transform: translateY(700%);
+  }
+  .magicdivider {
+    transform: translateY(180%);
+  }
+  .storedivider {
+    transform: translateY(575%);
+  }
+  .planDisney{
+    transform: translateY(230%);
+    width: 90%;
+  }
+  .footer{
+    transform: translateY(15%);
+    height: 0px;
+    overflow: hidden; 
+    display: none;
+    transition: all 2s ease-in-out;
+  }
+  .dropDown{
+    height: 100%;
+    overflow: visible;
+    display: block;
+  }
+  /* #footerMobile{
+   
+  } */
+  .pageslinks{
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+  .planImgage{
+    width: 80px;
+    height: 80px;
+  }
+  .planImgage img{
+    width: 80px;
+    height: 80px;
+  }
+  .planDisneyPara{
+    font-size: x-small;
+  }
+  .socialmedia{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .relSites{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .relatedSites{
+    width: 90%
+  }
+  .footerEnd{
+    width: 100%;
+    padding: 5px 5px 5px 15px;
+    transform: translateY(380%);
+  }
+  .aditionalLinks, .aditionalLinks2 {
+    font-size: 0.5rem;
+  }
+  .aditionalLinks2{
+    padding-left: 25%;
+  }
+  .copyRights{
+    padding-left: 20%;
+  }
+  .stayIn{
+    width:100%;
+    margin-right: 0px;
+  }
+  #mobilelinks{
+    display: block;
+    transform: translateY(950%);
+  }
+}
+

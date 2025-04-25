@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <section class="navhome">
+      <div class="navBar">
+        <div class="upnav">
+          <div class="vist">
+            <p>Vist Disney.com</p>
+          </div>
+          <div class="search">
+            <p>Log In or Create Account</p>
+            |
+            <p>Help</p>
+            <input id="serchInput" type="text" />
+          </div>
+        </div>
+        <div>
+        <ul class="navMenu" id="nav" >
+          <li data-card="card1">
+            <a href="#home"
+              ><img
+                class="logoImg"
+                src="./assets/disneylogo.png"
+                alt="Disneylogo"
+            /></a>
+          </li>
+          <li data-card="card2" class="menuhover" onmo>Tickets & Parks</li>
+          <li data-card="card3" class="menuhover">Place to Stay</li>
+          <li data-card="card4" class="menuhover">Things to Do</li>
+          <li data-card="card5" class="menuhover">Magic Key</li>
+          <li data-card="card6" class="menuhover">Shop</li>
+          <li data-card="card7" class="menuhover">Cart</li>
+          <li data-card="card8" class="menuhover">My Disneyland</li>
+        </ul>
+        <div class="cards" id="card1" style="display: none;"></div>
+        <div class="cards" id="card2">
+          <div class="menucards">
+             <p><b>Tickets & Passes</b></p>
+             <ul class="menuUlList">
+              <li>Buy Theme Park Tickets</li>
+              <li>View Offers & Discounts</li>
+              <li>Buy Special Event Tickets</li>
+              <li>Buy Theme Park Parking</li>
+              <li>Buy Magic Key Passes</li>
+              <li>Theme Park Reservations</li>
+              <li>Change Theme Park Tickets</li>
+             </ul>
+             <p><b>Plan Your Visit</b></p>
+             <ul class="menuUlList">
+              <li>Explore Disneyland Vacation</li>
+              <li>Lightning Lane Multi Pass</li>
+              <li>Maps</li>
+              <li>Directions</li>
+             </ul>
+          </div>
+          <div class="explore">
+               <div class="explorePara">
+               <p><b>Explore Our Parks</b></p>
+               <p>See All Hours & Events Calendar</p>
+               <p>Park Hours for Thursday, April 24, 2025</p>
+              </div>  
+               <div>
+                   <div class="castleFlex">
+                   <div class="castlelogo">
+                    <img src="./assets/castle.jpg" alt="castle">
+                   </div>
+                   <div>
+                     <p>Disneyland Park</p>
+                     <p>8:00 AM to 10:00 PM</p>
+                   </div>
+                  </div>
+                  <div class="castleFlex">
+                    <div class="castlelogo">
+                      <img src="./assets/wheel.jpg" alt="castle">
+                     </div>
+                     <div>
+                       <p>Disneyland California Adventure Park</p>
+                       <p>8:00 AM to 10:00 PM</p>
+                     </div>
+                  </div>
+               </div>
+
+          </div>
+        </div>
+        <div class="cards" id="card3">
+          <div class="menucards">
+            <p><b>View All 3 Disneyland Resort Hotels</b></p>
+            <p><b>Disney's Grand Californian Hotel & Spa</b></p>
+            <p>Craftsman-style elegance with the all-new Tenaya Stone Spa</p>
+            <p><b>Disneyland Hotel</b></p>
+            <p>Modern classic with luxurious rooms and monorail waterslides</p>
+            <p><b>Pixar Place Hotel</b></p>
+            <p>Contemporary design with unique touches of Pixar artistry</p>
+            <p><b>Good Neighbor Hotels</b></p>
+            <p>Disney-approved quality hotels close to the Disneyland Resort</p>
+            <p><b>Reservations</b></p>
+            <ul class="menuUlList">
+              <li>My Hotel Reservations</li>
+              <li>Disneyland Resort Hotel Packages</li>
+              <li>Good Neighbour Hotel Packages</li>
+             </ul>
+         </div>
+         <div class="explore">  
+              <div>
+                  <div class="castleFlex">
+                  <div class="castlelogo">
+                   <img src="./assets/Photo-Treatment-.jpg" alt="castle">
+                  </div>
+                  <div>
+                    <p>Save on Stays During the <br>70th Celebration</p>
+                  </div>
+                 </div>
+                 <div class="castleFlex">
+                   <div class="castlelogo">
+                     <img src="./assets/disenystay.jpg" alt="stay">
+                    </div>
+                    <div>
+                      <p>Save Up to 20% of on selected <br> stay</p>
+                    </div>
+                 </div>
+                 <div class="castleFlex">
+                  <div class="castlelogo">
+                    <img src="./assets/hotelstay.jpg" alt="stay">
+                   </div>
+                   <div>
+                     <p>Why Stay at a of the <br> Disneyland Resorts</p>
+                   </div>
+                </div>
+                <div class="castleFlex">
+                  <div class="castlelogo">
+                    <img src="./assets/villasdisney.jpg" alt="stay">
+                   </div>
+                   <div>
+                     <p>The Villas at the<br> Disneyland Hotel</p>
+                   </div>
+                </div>
+                <div class="castleFlex">
+                  <div class="castlelogo">
+                    <img src="./assets/disneylandGuest.jpg" alt="stay">
+                   </div>
+                   <div>
+                     <p>Hotel Guest Activities</p>
+                   </div>
+                </div>
+              </div>
+
+         </div>
+        </div>
+        <div class="cards" id="card4">
+          <div class="menucards">
+            <p><b>Dining</b></p>
+            <ul class="menuUlList">
+             <li>Make Reservations</li>
+             <li>My Dining Reservations</li>
+             <li>Character Dining</li>
+             <li>All Dining</li>
+            </ul>
+            <p><b>Activities</b></p>
+            <ul class="menuUlList">
+             <li>Disney Genie Service</li>
+             <li>MagicBand+ Experiences</li>
+             <li>Attractions and Entertainment</li>
+             <li> Character Experiences</li>
+             <li>Crown Collection</li>
+             <li>VIP Tours</li>
+             <li>Events and Tours</li>
+             <li>Recreation</li>
+             <li>Spa</li>
+             <li>PhotoPass</li> 
+            </ul>
+            <p><b>Shopping</b></p>
+            <ul class="menuUlList">
+             <li>Disney Store</li>
+             <li>Merchandise Mobile Checkout</li>
+             <li>All Stores</li>
+            </ul>
+         </div>
+         <div class="explore">
+          <div>
+            <div class="castleFlex">
+            <div class="castlelogo">
+             <img src="./assets/Photo-Treatment-.jpg" alt="castle">
+            </div>
+            <div>
+              <p>Ticket and Reservation <br>Details</p>
+            </div>
+           </div>
+           <div class="castleFlex">
+             <div class="castlelogo">
+               <img src="./assets/disenystay.jpg" alt="stay">
+              </div>
+              <div>
+                <p>Lightning Lane Passes</p>
+              </div>
+           </div>
+           <div class="castleFlex">
+            <div class="castlelogo">
+              <img src="./assets/hotelstay.jpg" alt="stay">
+             </div>
+             <div>
+               <p>70th Anniversary Guided <br> tour</p>
+             </div>
+          </div>
+          <div class="castleFlex">
+            <div class="castlelogo">
+              <img src="./assets/villasdisney.jpg" alt="stay">
+             </div>
+             <div>
+               <p>Tomorrowland Terrace <br> Dining </p>
+             </div>
+          </div>
+          <div class="castleFlex">
+            <div class="castlelogo">
+              <img src="./assets/disneylandGuest.jpg" alt="stay">
+             </div>
+             <div>
+               <p>Disneyland Resort VIP <br> Tours</p>
+             </div>
+          </div>
+          <div class="castleFlex">
+            <div class="castlelogo">
+              <img src="./assets/disneydistrict.jpg" alt="stay">
+             </div>
+             <div>
+               <p>Downtown Disney District</p>
+             </div>
+          </div>
+        </div>
+         </div>
+        </div>
+        <div class="cards" id="card5">
+          <div class="menucards">
+            <p><b>Magic Key Passes</b></p>
+            <p>Learn about the Disneyland Resort annual pass program</p>
+            <p><b>Magic Key Discounts</b></p>
+            <p>Discover food and merchandise savings</p>
+            <p><b>Link Magic Key Pass to My Profile</b></p>
+            <p>Make theme park entry easier</p>
+            <p><b>Magic Key Calendar</b></p>
+            <p>View blockout date by pass type </p>
+            <p><b>Renew Magic Key Passes</b></p>
+            <p>Unlock another year of magic</p>
+         </div>
+        </div>
+        <div class="cards" id="card6">
+          <div class="explore">
+            <div class="explorePara">
+            <p><b>Shop the Story you Love</b></p>
+            <div class="shopImg">
+              <img src="./assets/disneyfamily.jpg" alt="castle">
+             </div>
+            <p style="width: 150px;">The official online home for every Disney, Pixar & Star Wars fan in your family.<br>
+             <br> Disney Store</p>
+           </div>  
+
+       </div>
+       <div class="menucards">
+        <p><b>Merchandise</b></p>
+        <ul class="menuUlList">
+         <li>New Arrivals</li>
+         <li>Authentic Custom T-Shirts</li>
+         <li>All Parks Products</li>
+         <li>Disney Gift Card</li>
+        </ul>
+        <p><b>Locations</b></p>
+        <ul class="menuUlList">
+         <li>All Disneyland Shops</li>
+         <li>Downtown Disney Shops</li>
+        </ul>
+     </div>
+        </div>
+        <div class="cards" id="card7">
+          <div class="menucards">
+            <p><b>Your Carts</b></p>
+            <hr>
+            <p style="padding: 0px 0px 0px 50px;">Your Cart is Empty</p>
+            <div class="cartImg">
+              <div class="cartImg1">
+                <img src="./assets/logodisney.png" alt="castel">
+              </div>
+              <div class="cartImg1">
+                <img src="./assets/tickets.png" alt="tickets">
+              </div>
+            </div>
+            <div class="cartEnd">
+              <div><b>Total</b></div>
+              <div><b>$ 0.00 USD</b></div>
+            </div>
+         </div>
+        </div>
+        <div class="cards" id="card8">
+          <div class="menucards">
+            <div class="myDisney">
+              <div class="myIcons">
+              <img src="./icons/hotel.png" alt="hotelicon">
+              </div>
+              <p><b>My Hotel Reservation</b></p>
+            </div>
+            <div class="myDisney">
+              <div class="myIcons">
+              <img src="./icons/task.png" alt="task">
+              </div>
+              <p><b>My Plans</b><br>
+                 Hotel,Dining and Ativities</p>
+            </div>
+            <div class="myDisney">
+              <div class="myIcons">
+              <img src="./icons/camera.png" alt="camera">
+              </div>
+              <p><b>My Photos</b></p>
+            </div>
+            <div class="myDisney">
+              <div class="myIcons">
+              <img src="./icons/calendar.png" alt="calender">
+              </div>
+              <p><b>Theme Park Reservation</b></p>
+            </div>
+            <div class="myDisney">
+              <div class="myIcons">
+              <img src="./icons/flight-ticket.png" alt="ticket">
+              </div>
+              <p><b>Link Tickets and Passes</b></p>
+            </div>
+            <div class="myDisney">
+              <div class="myIcons">
+              <img src="./icons/ticket.png" alt="tickets">
+              </div>
+              <p><b>Change Your Theme Park Tickets</b></p>
+            </div>
+         </div>
+        </div>
+      </div>
+        <div class="mobileNav">
+          <div class="mobileleft">
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            >
+            <img id="menuicon" src="./assets/menus.png" alt="menu" />
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                  Offcanvas with body scrolling
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <p>
+                  Try scrolling the rest of the page to see this option in
+                  action.
+                </p>
+              </div>
+            </div>
+            <img
+              class="logomobile"
+              src="./assets/disneylogo.png"
+              alt="Disneylogo"
+            />
+          </div>
+          <div class="mobileright">
+            <button id="ticketbtn" disable="true">tickets</button>
+            <img id="searchicon" src="./assets/search.png" alt="iconserch" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section -->
+    <section class="hero-Conrainer" id="heroCont">
+      <div class="fieldContainer">
+        <p>Price Your Vacation</p>
+        <div class="dateSelector">
+          <div class="date-range">
+            <label for="startDate">Dates</label><br />
+            <input type="date" id="startDate" />
+            -
+            <input type="date" id="endDate" />
+          </div>
+          <div class="group">
+            <label>Adults (18+)</label>
+            <div class="counter">
+              <button class="btn1" id="adultDecrement">-</button>
+              <p id="adultCount">1</p>
+              <button class="btn1" id="adultIncrement">+</button>
+            </div>
+          </div>
+          <div class="group">
+            <label>Children</label>
+            <div class="counter">
+              <button class="btn1" id="childDecrement">-</button>
+              <p id="childCount">0</p>
+              <button class="btn1" id="childIncrement">+</button>
+            </div>
+          </div>
+          <div class="group">
+            <label for="hotels">Hotel</label>
+            <select id="hotels" name="hotels">
+              <option value="AllHotels">All Hotels</option>
+              <option value="Disneyland_Hotel">Disneyland Hotel</option>
+              <option value="Disney's Grand">
+                Disney's Grand Californian Hotel and Spa
+              </option>
+              <option value="Pixar Place Hotel">Pixar Place Hotel</option>
+            </select>
+          </div>
+          <div class="group checkbox-group">
+            <input type="checkbox" id="accessibleRooms" />
+            <label for="accessibleRooms">Accessible Rooms</label>
+          </div>
+          <div class="find_hotel">
+            <button>Find Hotels</button>
+          </div>
+        </div>
+      </div>
+      <div class="heading">
+        <h2>Disneyland Anniversary Offer</h2>
+        <h1>Tickets from $100/Day</h1>
+        <div class="headButton">
+          <button class="offerbtn">Get Offer Details</button>
+          <button class="offerbtn">View All Offer</button>
+        </div>
+      </div>
+    </section>
+    <section class="offersSection">
+      <h2>Save with Special Offers</h2>
+      <div class="offers">
+        <div class="offerDes">
+          <h4>Come Celebrate and Save up to 30% on Select Stays!</h4>
+          <p>
+            Book early and save up to 30% on select stays of 4 or more nights at
+            a Disneyland Resort hotel, from May 16 through September 26, 2025,
+            when you book by May 15, 2025. Subject to availability and
+            restrictions.
+          </p>
+          <button class="offerbtn">Get offer Details</button>
+          <button class="offerbtn">View Hotel Guest Benifits</button>
+        </div>
+        <div class="offerimage">
+          <img
+            class="imgAnimation"
+            src="./assets/Photo-Treatment-.jpg"
+            alt="70%offer"
+          />
+        </div>
+      </div>
+      <div class="offers">
+        <div class="offerimage">
+          <img class="imgAnimation" src="./assets/offer2.PNG" alt="70%offer" />
+        </div>
+        <div class="offerDes">
+          <h4>Join the Celebration with Tickets as Low as $100/Day!</h4>
+          <p>
+            For a limited time, you can buy specially priced 4-day, 1-park per
+            day tickets to visit from May 16 through August 14, 2025.
+          </p>
+          <button class="offerbtn">Get offer Details</button>
+          <button class="offerbtn">View All offer</button>
+        </div>
+      </div>
+    </section>
+    <div class="divider offerdivider">
+      <div class="line">
+        <hr />
+      </div>
+      <div class="stars">
+        <img src="./assets/Sparkles.png" alt="sparkels" />
+      </div>
+      <div class="line">
+        <hr />
+      </div>
+    </div>
+    <section class="offersSection">
+      <h2>Get Started</h2>
+      <div class="offers">
+        <div class="offerDes">
+          <h4>Your Disneyland Vacation Awaits</h4>
+          <p>
+            Discover itinerary ideas, insider tips and ways to save on a visit
+            to the Disneyland Resort—so you can stay and play your way.
+          </p>
+          <button class="offerbtn">Find Out More</button>
+        </div>
+        <div class="offerimage">
+          <img
+            class="imgAnimation"
+            src="./assets/getstart.PNG"
+            alt="getstart"
+          />
+        </div>
+      </div>
+      <div class="offers">
+        <div class="offerimage">
+          <img
+            class="imgAnimation"
+            src="./assets/getstarted2.PNG"
+            alt="getstart"
+          />
+        </div>
+        <div class="offerDes">
+          <h4>Unlock a Year of Magic with a Magic Key Pass</h4>
+          <p>
+            Magic Key annual passes let you visit both parks on the same
+            day—with discounts, special experiences and more all year long!
+          </p>
+          <button class="offerbtn">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <div class="divider getdivider">
+      <div class="line">
+        <hr />
+      </div>
+      <div class="stars">
+        <img src="./assets/Sparkles.png" alt="sparkels" />
+      </div>
+      <div class="line">
+        <hr />
+      </div>
+    </div>
+    <section class="magic-section">
+      <div class="magic-title">Discover Magic in Both Parks</div>
+      <div class="container-fluid">
+        <div class="row g-3">
+          <div class="col-12 col-md-12">
+            <div class="magic-card">
+              <img
+                class="imgAnimation"
+                src="./assets/featureimg1.PNG"
+                alt="Season of the Force"
+              />
+              <div class="magic-label">
+                Season of the Force<br />
+                <span class="magic-sub-label">Disneyland Park</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="magic-card">
+              <img
+                class="imgAnimation"
+                src="./assets/featureimg2.PNG"
+                alt="Animation Academy"
+              />
+              <div class="magic-label">
+                Animation Academy<br />
+                <span class="magic-sub-label"
+                  >Disney California Adventure Park</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="magic-card">
+              <img
+                class="imgAnimation"
+                src="./assets/featureimg3.PNG"
+                alt="Tiana's Bayou Adventure"
+              />
+              <div class="magic-label" style="background: #2e8b57">
+                Tiana's Bayou Adventure<br />
+                <span class="magic-sub-label">Disneyland Park</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="magic-card">
+              <img
+                class="imgAnimation"
+                id="image4"
+                src="./assets/Cars-land-racers.jpg"
+                alt="Radiator Springs Racers"
+              />
+              <div class="magic-label" style="background: #a6001a">
+                Radiator Springs Racers<br />
+                <span class="magic-sub-label"
+                  >Disney California Adventure Park</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider magicdivider">
+      <div class="line">
+        <hr />
+      </div>
+      <div class="stars">
+        <img src="./assets/Sparkles.png" alt="sparkels" />
+      </div>
+      <div class="line">
+        <hr />
+      </div>
+    </div>
+    <section class="storeSection">
+      <h2>Play, Play & Shop</h2>
+      <div class="offers">
+        <div class="offerimage">
+          <img
+            class="imgAnimation"
+            src="./assets/LL-DLR-promo-hero-16x9-16x9.jpg"
+            alt="getstart"
+          />
+        </div>
+        <div class="offerDes">
+          <h4>Skip the Standby Line with Lightning Lane Passes</h4>
+          <p>
+            Save time waiting in line so you can enjoy more of your happiest day
+            at the Disneyland Resort!
+          </p>
+          <button class="offerbtn">Find Out More</button>
+        </div>
+      </div>
+      <div class="disneyStore">
+        <div class="MagicBand storeCards">
+          <img class="storeImg" src="./assets/magicband.jpg" alt="magicaband" />
+          <h4>Enjoy MagicBand+ Convenience and Fun!</h4>
+          <p>Make your park visit easier and more entertaining than ever.</p>
+          <button class="offerbtn">Find Out More</button>
+        </div>
+        <div class="giftsStore storeCards">
+          <img class="storeImg" src="./assets/giftstore.PNG" alt="giftstore" />
+          <h4>Gifts Galore at Disney Store</h4>
+          <p>Pick up the latest fashions, accessories, toys and more!</p>
+          <button class="offerbtn">Shop Disney Store</button>
+        </div>
+        <div class="adventureBigin storeCards">
+          <img
+            class="storeImg"
+            src="./assets/disneyimagineer.jpg"
+            alt="immaginingstory"
+          />
+          <h4>Begin Your Adventure with Disney+</h4>
+          <p>
+            Before you experience Disney favorites in the parks, share them
+            together at home.
+          </p>
+          <button class="offerbtn">Explore Disney+</button>
+        </div>
+      </div>
+    </section>
+    <div class="divider storedivider">
+      <div class="line">
+        <hr />
+      </div>
+      <div class="stars">
+        <img src="./assets/Sparkles.png" alt="sparkels" />
+      </div>
+      <div class="line">
+        <hr />
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="planDisney">
+      <div>
+        <p class="planDisneyPara">Have A Question?</p>
+      </div>
+      <div class="planImgage">
+        <img src="./assets/plandisney.jpg" alt="planimgage" />
+      </div>
+      <div>
+        <p class="planDisneyPara">
+          Connect with a <br />
+          PlanDisney panelist
+        </p>
+      </div>
+    </div>
+    <div id="mobilelinks">
+      <h5 id="moreLinks">
+        Show More links <img src="./assets/chevron-up.svg" alt="up" />
+      </h5>
+    </div>
+    <section class="footer" id="footerMobile">
+      <div class="container">
+        <div class="pageslinks">
+          <div class="parks&tickets">
+            <p><b>Parks & Tickets</b></p>
+            <ul class="liststyles">
+              <li>Disneyland Park</li>
+              <li>Disney California Adventure Park</li>
+              <li>Park Hours</li>
+              <li>Entertainment Schedule</li>
+              <li>Maps</li>
+              <li>Disney PhotoPass</li>
+              <li>Driving Directions</li>
+              <li>Theme Park Tickets</li>
+              <li>Ticket and Reservation Details</li>
+              <li>Magic Key Passes</li>
+              <li>Special Event Tickets</li>
+              <li>Theme Park Parking</li>
+            </ul>
+            <p><b>Magic Key</b></p>
+            <ul class="liststyles">
+              <li>Magic Key Pass Information</li>
+              <li>Magic Key Discounts</li>
+              <li>Link Magic Key Pass to My Profile</li>
+              <li>Magic Key Access Calendar</li>
+            </ul>
+          </div>
+          <div class="place&stay">
+            <p><b>Places to Stay</b></p>
+            <ul class="liststyles">
+              <li>Disney Grand California Hotel & Spa</li>
+              <li>Disneyland Hotel</li>
+              <li>Pixar Place Hotel</li>
+              <li>Good Neighbor Hotels</li>
+              <li>Offers and Discounts</li>
+            </ul>
+            <p><b>Rooms Reservations</b></p>
+            <ul class="liststyles">
+              <li>My Hotel Reservations</li>
+              <li>Vacation Packages</li>
+            </ul>
+            <p><b>Destinations</b></p>
+            <ul class="liststyles">
+              <li>Downtown Disney District</li>
+              <li>Southern California</li>
+            </ul>
+          </div>
+          <div class="thingsToDo">
+            <p><b>Things To Do</b></p>
+            <ul class="liststyles">
+              <li>Make Dining Reservations</li>
+              <li>My Dining Reservations</li>
+              <li>Character Dining</li>
+              <li>All Dining</li>
+              <li>Attractions and Entertainment</li>
+              <li>Character Experiences</li>
+              <li>Events and Tours</li>
+              <li>Recreation</li>
+              <li>MagicBand+ Experiences</li>
+              <li>Play Disney Parks Mobile App</li>
+              <li>Shops</li>
+              <li>Buy Merchandise</li>
+              <li>Buy Disney Gift Cards</li>
+              <li>Spa</li>
+              <li>What's New</li>
+              <li>Celebrations & Special Occasions</li>
+            </ul>
+          </div>
+          <div class="help">
+            <p><b>Help</b></p>
+            <ul class="liststyles">
+              <li>Help Center</li>
+              <li>Pre-Arrival Tips</li>
+              <li>Mobile App</li>
+              <li>Guest Safety</li>
+              <li>Guest Services</li>
+              <li>Property Rules</li>
+              <li>Getting to the Disneyland Resort</li>
+              <li>Guests with Disabilities</li>
+              <li>Frequently Asked Questions</li>
+              <li>planDisney</li>
+              <li>Website Help</li>
+              <li>Terms and Conditions</li>
+            </ul>
+            <p><b>Contact Us</b></p>
+            <ul class="liststyles">
+              <li>Phone Directory</li>
+              <li>Email</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="lines"></div>
+      <div class="socialmedia">
+        <div class="socialheading">
+          <p><b>Stay Connected</b></p>
+          <div class="socialIcons">
+            <img src="./assets/icons8-facebook-48.png" alt="facebook" />
+            <img src="./assets/icons8-instagram-48.png" alt="instagram" />
+            <img src="./assets/icons8-x-48.png" alt="twitter" />
+            <img src="./assets/icons8-tiktok-48.png" alt="ticktok" />
+          </div>
+        </div>
+        <div class="disneyparks">
+          <p><b>Disney Parks</b></p>
+          <div class="disneysocial">
+            <div class="youtubeDiv">
+              <img src="./assets/icons8-youtube-48.png" alt="youtube" />
+              <p>Youtube Channel</p>
+            </div>
+            <div class="youtubeDiv">
+              <img src="./assets/icons8-blog-48.png" alt="blog" />
+              <p>Blog</p>
+            </div>
+          </div>
+        </div>
+        <div class="stayIn">
+          <p><b>Stay in the Know</b></p>
+          <p>
+            Sign up for a MyDisney account to learn about the latest Disney
+            Parks news, special offers and amazing experiences!<br />
+            <span style="color: rgb(152, 125, 177)"
+              >Create Your MyDisney Account</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="relatedSites">
+        <p><b>Related Disney Sites</b></p>
+        <div class="relSites">
+          <div>
+            <p>Disney Parks</p>
+            <p>Disney Cruise Line</p>
+            <p>Disney Vacation Club</p>
+          </div>
+          <div>
+            <p>Adventures by Disney</p>
+            <p>Disney Gift Card</p>
+            <p>planDisney</p>
+          </div>
+          <div>
+            <p>Disney Meetings & Events</p>
+            <p>
+              Disney's Fairy Tale Weddings &<br />
+              Honeymoons
+            </p>
+            <p>Disney Imagination Campus</p>
+          </div>
+          <div>
+            <p>Disney Floral & Gifts</p>
+            <p>Disney® Premier Visa® Card</p>
+            <p>Disney Careers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="footerEnd" >
+      <div class="aditionalLinks">
+        <p>Help & Guest Services</p>
+        <p>Site Map</p>
+        <p>Terms of Use</p>
+        <p>Legal Notices</p>
+        <p>Privacy Policy</p>
+        <p>Do Not Sell or Share My Personal Information</p>
+        <p>Children's Online Privacy Policy</p>
+      </div>
+      <div class="aditionalLinks2">
+        <p>Your US State Privacy Rights</p>
+        <p>Interest-Based Ads</p>
+      </div>
+      <div class="copyRights">
+        <p>© Disney, All Rights Reserved</p>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
