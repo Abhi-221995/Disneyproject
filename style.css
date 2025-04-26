@@ -82,6 +82,13 @@ input {
 .mobileleft {
   padding-left: 10px;
 }
+.mobileMenu{
+  list-style: none;
+  cursor: pointer;
+}
+.mobileMenu ul li:hover{
+  color: rgb(171, 134, 206);
+}
 .logomobile {
   height: 60px;
   width: 80px;
